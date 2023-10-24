@@ -1,0 +1,36 @@
+{
+  "name": "@andcreations/io",
+  "version": "0.1.0",
+  "description": "I/O commons for other repositories",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist && rimraf node_modules",
+    "rebuild": "rimraf dist && npm run build",
+    "test": "jest"
+  },
+  "author": "AndCreations",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "@types/node": "^14.11.5",
+    "jest": "^27.2.4",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^27.0.5"
+  },
+  "jest": {
+    "rootDir": "src",
+    "moduleFileExtensions": [
+      "js",
+      "ts"
+    ],
+    "testRegex": ".test.ts$",
+    "transform": {
+      "^.+\\.(t)s$": "ts-jest"
+    }
+  }
+}
